@@ -26,3 +26,6 @@ def pred():
     output = predict_complexity(input)
     # {'output' :  'linear'}
     return jsonify({'output': output})
+  
+ __name__ == '__main__':
+    app.run(debug = True)
