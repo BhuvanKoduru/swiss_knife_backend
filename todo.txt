@@ -1,1 +1,11 @@
+To do list:
+1. Code complexity calculator
+  1.a) java
+  1.b) python
+2. code visualisation tool
+  2.a)explore any 
+3. code authorship tool 
+4. bug detection tool
+5. malicious commits
+6. check for malware 
 
