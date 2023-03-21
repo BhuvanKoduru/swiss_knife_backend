@@ -1,11 +1,17 @@
 To do list:
-1. Code complexity calculator
-  1.a) java
+1. Code complexity calculator: how to calculate code complexity? what are the parameters?
+cyclomatic code complexity
+halstead volume
+lines of code
+
+  1.a) java (using huggingface) 
   1.b) python
 2. code visualisation tool
-  2.a)explore any 
+  2.a)explore any possible libraries
 3. code authorship tool 
+  3.a)find datasets and analyse methods: knn, ngrams model. 
 4. bug detection tool
+  4.a) search online
 5. malicious commits
 6. check for malware 
 
