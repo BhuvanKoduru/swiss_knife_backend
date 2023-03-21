@@ -4,9 +4,6 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 tokenizer = AutoTokenizer.from_pretrained("codeparrot/unixcoder-java-complexity-prediction")
 model = AutoModelForSequenceClassification.from_pretrained("codeparrot/unixcoder-java-complexity-prediction")
 
-import os
-import string
-
 def predict_complexity(code):
   inputs = tokenizer(code, return_tensors="pt")
 
@@ -18,3 +15,14 @@ def predict_complexity(code):
     values.append(val.item())
 
   return names[(values.index(max(values)))]
+
+app = Flask(__name__)
+  
+# From React, send GET request to localhost:5000/some_code
+@app.route('/complexity', methods = ['GET','POST'])
+def pred():
+    #input = code
+    input=request.args.get('code')
+    output = predict_complexity(input)
+    # {'output' :  'linear'}
+    return jsonify({'output': output})
