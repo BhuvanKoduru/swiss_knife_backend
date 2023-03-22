@@ -17,7 +17,7 @@ How to run the app:
       
     you can also run simple java code snippets like for loops:
         for(int i=0;i<5;i++)
-        expeected output: linear
+        expected output: linear
         
    2. Python maintainability calculator:
         pass the complete path of any LOCAL python file, ex: C:\Users\User1\PythonCode\test.py
